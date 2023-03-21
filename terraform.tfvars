@@ -1,5 +1,5 @@
 # General Conf
-region  = "us-east"
+region  = "us-east-1"
 profile = "default"
 environment = "prod"
 
