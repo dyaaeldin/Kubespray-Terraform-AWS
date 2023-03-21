@@ -19,7 +19,7 @@ variable "vpc-name" {
   type = string
 }
 variable "az" {
-  type = string
+  type = list(string)
 }
 
 # Compute
@@ -27,8 +27,6 @@ variable "bastion-ami" {
   type = string
 }
 
-
-### Compute
 variable "bastion-type" {
   type = string
 }
@@ -61,5 +59,13 @@ variable "key-name" {
 }
 
 variable "public-key" {
+  type = string
+}
+
+variable "allowed-ips" {
+  type = list(string)
+}
+
+variable "environment" {
   type = string
 }

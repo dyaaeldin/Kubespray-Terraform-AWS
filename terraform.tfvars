@@ -1,6 +1,7 @@
 # General Conf
 region  = "us-east"
 profile = "default"
+environment = "prod"
 
 # Network Conf
 vpc-name        = "kubespray"
@@ -11,7 +12,7 @@ private_subnets = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
 
 
 ## Allowed ips 
-allowed-ips = "0.0.0.0/0"
+allowed-ips = ["0.0.0.0/0"]
 
 ### Compute 
 # Bastion
