@@ -1,6 +1,6 @@
 # Kubespray Terraform AWS
 
-Terraform creates:
+##### Terraform creates:
 - X public subnets (default 3)
 - X private subnets (default 3)
 - Respective NAT gateway, IGW, RT, SG, etc..
@@ -8,7 +8,7 @@ Terraform creates:
 - X workers
 
 
-### To Do
+##### To Do
 
 [] Allow connection between masters and workers.
 
