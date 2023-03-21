@@ -6,7 +6,7 @@ environment = "prod"
 # Network Conf
 vpc-name        = "kubespray"
 vpc-cidr        = "10.0.0.0/16"
-az              = ["eu-east-1a", "eu-east-1b", "eu-east-1c"]
+az              = ["us-east-1a", "us-east-1b", "us-east-1c"]
 public_subnets  = ["10.0.101.0/24", "10.0.102.0/24", "10.0.103.0/24"]
 private_subnets = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
 
