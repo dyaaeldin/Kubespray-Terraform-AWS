@@ -1,6 +1,6 @@
 # General Conf
-region  = "us-east-1"
-profile = "default"
+region      = "us-east-1"
+profile     = "default"
 environment = "prod"
 
 # Network Conf
@@ -33,4 +33,4 @@ workers-count = "2"
 
 ## SSH keys
 key-name   = "dyaa-key-1"
-public-key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCxZ3hr2gbB1RyJQfV4uc3n1hLGpwVXrme2bbUMzE9gfCPG9f5OCBLqVDQltbrA7KwOV2664AQOqUQxKqnH8Gr9SvH0S5dNYKI8WDPZWIU74MVjWg85YWr5ecKUDOhGWnvmZWYT6jKHVg2Y0oMrWiNmL1gojHFeEgAESsn+zncYqRQ7oPng6PNCiyQWq3lIuyKeKgitWIj+CwIJ23DWnVg2DbCI9VuMLafAVSX8uE68uOpWxw5xMwAkpjL2Omf3CZq4BAQjjDs7PKRQcgOs2gZNweOflhDLCAGbMToa84YpaSyMGY17wP1k6M3/tFeG0yLdDtyH7dZLugi1alE0hCLDwVKVXJgSJY7MKi3po86s6YeuIUqOJlBt7lsYMqoX3veEiLqHqVBUWWdfSYksv3w8VWqFfFJTjezNW5olRIUcUNAQ+I2KW+v5qOAeEzBZRlU0ulqBuk1V+t+HO80tPTMBiScnnC+kOefFmc5/f0uOa/OJfclCvIKq+Z7BfR41uuM= dyaa@container-tools.dyaa.local"
+public-key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDeUhOOOLSr7P77LuGULisyyStabKODEimRjFvre2I0uuuE271gxBJr8xWi9On9bjqEmxhsHpjXoV+lFErMQZhYkdSENuSL/k7mH+1hyG6hi2lPgMu1x7lxfmQhLebNqpry5L5KqxpbgFEM8y3LKcxcMxGxNzPCRQVjcujodDQN5/bbn1O8Ubj1+VbBDC6kPMQ8G70nWQ0+0YNSU0lFhEMOvP5LRtXlfjW9ZAUPpgsx3s4rcsbQ4A2bMyfDJ9uCI9eAJPAgQGctCmGIWZiEuKJiXq61LW/or8yFxeYszRSk054A0Hfc04Z58mCCM+HR+KZ/VSNx6t4sIJJ/Dx7GNppIeM4rYoUR+M3f05CnXfWOSMHr9USh37puwaVdLLVokWNqPWgMZ6LVTy9SYbp+qtje1UUDilw/ewX2tDe26hs3NyAXGYph8vBJ3aK92I4mNiKwdyjDvuk1CChpgckDkkj+qBN0dVUP+EYJwrJu/tH7zYYohlYpTl9fWHNj9pqizik= dyaa@container-tools.dyaa.local"
