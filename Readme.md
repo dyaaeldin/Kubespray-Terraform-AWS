@@ -20,7 +20,7 @@ terraform apply
 
 ##### To Do
 
-[] Allow connection between masters and workers.
+[x] Allow connection between masters and workers.
 
 [] Create ELB to loadbalance between masters.
 
