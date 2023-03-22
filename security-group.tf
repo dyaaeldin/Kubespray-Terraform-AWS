@@ -1,6 +1,6 @@
-resource "aws_security_group" "allow-ssh-from-bastion" {
-  name        = "allow-ssh-from-bastion"
-  description = "Allow ssh from bastion"
+resource "aws_security_group" "allow-private-connection" {
+  name        = "allow-private-connection"
+  description = "Allow private connection between nodes"
   vpc_id      = module.vpc.vpc_id
 
   ingress {
@@ -9,7 +9,13 @@ resource "aws_security_group" "allow-ssh-from-bastion" {
     to_port     = 22
     protocol    = "tcp"
     cidr_blocks = ["${aws_instance.bastion.private_ip}/32"]
-    self        = true
+  }
+  ingress {
+    description = "Allow private connection between nodes"
+    from_port   = -1
+    to_port     = -1
+    protocol    = -1
+    self        = true    
   }
 
   egress {

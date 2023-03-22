@@ -16,7 +16,7 @@ resource "aws_instance" "masters" {
   instance_type   = var.masters-type
   subnet_id       = element(module.vpc.private_subnets, count.index)
   count           = var.masters-count
-  security_groups = [aws_security_group.allow-ssh-from-bastion.id]
+  security_groups = [aws_security_group.allow-private-connection.id]
   key_name        = aws_key_pair.aws-pub-key.key_name
   tags = {
     "Name" = "master-${count.index}"
@@ -28,7 +28,7 @@ resource "aws_instance" "workers" {
   instance_type   = var.workers-type
   subnet_id       = element(module.vpc.private_subnets, count.index)
   count           = var.workers-count
-  security_groups = [aws_security_group.allow-ssh-from-bastion.id]
+  security_groups = [aws_security_group.allow-private-connection.id]
   key_name        = aws_key_pair.aws-pub-key.key_name
   tags = {
     "Name" = "worker-${count.index}"
